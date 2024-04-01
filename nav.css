@@ -1,0 +1,74 @@
+:root {
+  --colour-background: #faf7fa;
+  --colour-text: #120f1a;
+  --colour-highlight: #ede8f2;
+  --colour-accent: #6b5494;
+  --colour-textwhite: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none; 
+}
+ul {
+  list-style: none; 
+}
+body {
+  background-color: var(--colour-background);
+  color: var(--colour-text);
+  font-family: "Anta";
+}
+body {
+  background-color: var(--colour-background);
+  color: var(--colour-text);
+  margin: 0;
+  padding: 0;
+  font-family: "Anta";
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.headerMain {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.headerNav {
+  display: flex;
+  align-items: center; 
+}
+
+.headerNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.headerNav ul li {
+  margin-right: 20px;
+}
+
+.headerNav ul li a {
+  color: var(--colour-text);
+  text-decoration: none;
+}
+
+.headerNav ul li a:hover {
+  color: var(--colour-accent);
+}
+

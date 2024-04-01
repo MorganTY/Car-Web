@@ -1,0 +1,206 @@
+:root {
+  --colour-background: #faf7fa;
+  --colour-text: #120f1a;
+  --colour-highlight: #ede8f2;
+  --colour-accent: #6b5494;
+  --colour-textwhite: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none; /*Removes Underline off link*/
+}
+ul {
+  list-style: none; /*Remove Bullets off List*/
+}
+body {
+  background-color: var(--colour-background);
+  color: var(--colour-text);
+  font-family: "Anta";
+}
+body {
+  background-color: var(--colour-background);
+  color: var(--colour-text);
+  margin: 0;
+  padding: 0;
+  font-family: "Anta";
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+.homeContainer {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+.imageContainer {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.largeImage {
+  max-width: 100%;
+  width: calc(100% - 8rem);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-left: 4rem; 
+  margin-right: 4rem; 
+}
+
+.imageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.largeTitle {
+  font-size: 36px;
+  color: var(--colour-text);
+}
+
+@media screen and (max-width: 600px) {
+  .largeTitle {
+      font-size: 24px;
+  }
+}
+
+
+.PageContent {
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+.PageContentTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.PageContent {
+  font-size: 16px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px; 
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardContent {
+  font-size: 14px;
+}
+.cardImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.cardPrice {
+  font-size: 16px;
+  color: #0bfd33; 
+  margin-bottom: 8px;
+}
+
+
+.cardColor {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+.cardDescription {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+.add_to_basket {
+  background-color: #6b5494; 
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add_to_basket:hover {
+  background-color: #4a3c6a; 
+}
+
+@media (max-width: 600px) {
+  
+  .headerMain {
+    height: 50px;
+  }
+
+  .largeTitle {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .largeImage {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+}
+@media (max-width: 600px) {
+  
+  .largeTitle {
+    font-size: 24px;
+  }
+
+  .largeImage {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: calc(100% - 20px); 
+  }
+}

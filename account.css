@@ -1,0 +1,85 @@
+:root {
+    --colour-background: #faf7fa;
+    --colour-text: #120f1a;
+    --colour-highlight: #ede8f2;
+    --colour-accent: #6b5494;
+    --colour-textwhite: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Anta", sans-serif;
+    background-color: var(--colour-background);
+    color: var(--colour-text);
+    margin: 0;
+    padding: 0;
+}
+
+.accountContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.accountTitle {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    color: var(--colour-text);
+    margin-bottom: 20px;
+}
+
+.userInfo {
+    margin-bottom: 20px;
+}
+
+.userInfoH2 {
+    margin-bottom: 1.3rem ;
+}
+
+.userInfo p {
+    margin-bottom: 10px;
+}
+
+.formContainer {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.formContainer label,
+.formContainer input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formContainer input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formContainer input[type="submit"] {
+    background-color: var(--colour-accent);
+    color: var(--colour-textwhite);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formContainer input[type="submit"]:hover {
+    background-color: #4a3c6a;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}

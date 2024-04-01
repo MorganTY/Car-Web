@@ -1,0 +1,25 @@
+body {
+    background-color: #faf7fa;
+    color: #120f1a;
+    margin: 0;
+    padding: 0;
+}
+.admin-container {
+    max-width: 800px;
+    margin: 0;
+    padding: 20px;
+    margin-top: 40px ;
+}
+.message-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.message-card p {
+    margin-bottom: 10px;
+}
+.message-card p strong {    
+    font-weight: bold;
+}

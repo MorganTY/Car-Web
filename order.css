@@ -1,0 +1,41 @@
+:root {
+    --colour-background: #faf7fa;
+    --colour-text: #120f1a;
+    --colour-highlight: #ede8f2;
+    --colour-accent: #6b5494;
+    --colour-textwhite: white;
+}
+
+body {
+    font-family: 'Anta', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--colour-background);
+    color: var(--colour-text);
+}
+
+.orderContainer {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: var(--colour-highlight);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.orderTitle {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+p {
+    color: var(--colour-text);
+    margin: 10px 0;
+}
+
+h1 {
+    color: var(--colour-text);
+    text-align: center;
+    margin-top: 50px;
+}
